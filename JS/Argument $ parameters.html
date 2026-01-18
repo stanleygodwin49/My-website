@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Argument are the value that pass into the function or a method while parameters is a placeholder that 
+        receives/stores the value that is been passed to the function or method
+    </h4>
+    <script>
+        //parameter is a the placeholder for accepting/storing the data (argument)that will be passed in
+        const greet=(name) =>{//the parameters is the name.
+            return `hello  ${name}!`;// backtick ``
+            
+            
+        }
+        //u can use this 
+        console.log(greet('alice'));//argument is the data being passed into it
+        //or
+        const sayHello=greet("alice");
+        console.log(sayHello);
+
+        const describeMe=(name, age, sex, occupation)=>{
+            return `your name is ${name} you are ${age} years old, you are a ${sex} your occupation is ${occupation}`
+        }
+        const describeJohnResult=describeMe("john", "67", "male", "teacher");
+        const describeMaryResult=describeMe("mary", "45", "female", "teacher");
+        console.log(describeJohnResult)
+        console.log(describeMaryResult)
+
+        //default parameters
+        const describeSomeoneWithDefaultOccupation=(name,age,sex,occupation="developer")=>{
+            return `your name is ${name} you are ${age}yrs old. you are a ${sex}your occupation is ${occupation}`
+        }
+
+        const describeSamResult=describeSomeoneWithDefaultOccupation("sam", 65, "male","teacher");
+        const describeElizabethResult=describeSomeoneWithDefaultOccupation("elizabeth", 45, "female");
+        console.log(describeSamResult);// show the occupation as teacher cuz it is in the argument
+        console.log(describeElizabethResult);// didnt show as teacher cuz its not in the argument,but the defaults has it
+        
+        
+
+        
+        
+        
+
+        
+    </script>
+    <h5>if ur using defaults parameter if u decide not  to describe somebody its going to take "developer" as the defaults</h5>
+</body>
+</html>

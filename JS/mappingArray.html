@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    mapping array
+    <h3>product</h3>
+    <div id="products"></div>
+
+    <script>
+        let number=[10,20,30];
+        let doubled=number.map(num=>num * 3);
+        console.log(doubled);
+        
+        let products=[
+            {name:'phone', price:'50,000'},
+            {name:'laptop',price:'200,000'}
+        ];
+        let html=products.map(products =>`
+        <div>
+            <h3>${products.name}</h3>
+            <p>${products.price}</p>
+            </div>
+        `).join('');
+        document.getElementById('products').innerHTML=html;
+
+        //map() map array(create new array)it takes each elemnt of the array and apply a function to it.
+        
+
+        
+    </script>
+    
+</body>
+</html>

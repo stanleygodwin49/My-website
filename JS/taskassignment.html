@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <span>extract the id value from the below string using javascript</span>
+    <div>write a password validation function</div>
+
+    note:the function should accepts a string parameters, and show return a true or false if the password match the below requirements
+    <ol>
+        <li>must be greater than 6 characters in length</li>
+        <li>must contains at least an alphabetic character</li>
+        <li>must contains a numeric character</li>
+    </ol>
+    <section class="box">
+    <form action="password-form" id="password-form" class="password-form">
+    <label>Password</label>
+    <input type="password" id="password" placeholder="enter password">
+    <button id="check-strength" type="button"><a href="book.html">book</a></button>
+    <p id="password-strength"></p>
+    </form>
+    </section>
+    
+
+    
+    
+
+    <script>
+       //function isStrongPassword(password) {
+            //const  isLongEnough=password.length > 6;
+            //const hasLetter=/[a-zA-Z]/.test(password)
+            //const hasNumber=/[0-9]/.test(password)
+
+            //return isLongEnough && hasLetter && hasNumber;
+            
+       // }
+       // const results=isStrongPassword("matthew22")
+       // console.log(results);
+        //const result=isStrongPassword("longenough34");
+        //console.log(result);
+        let formInput=document.getElementById("password-form");
+        let passwordInput=document.getElementById("password");
+        let checkButton=document.getElementById("check-strength");
+        let resultParagraph=document.getElementById("password-strength");
+
+        checkButton.addEventListener("click", function(){
+           let password =passwordInput.value;
+           let errors =[];
+
+           if (!(password.length >=8 && password.length <=12))errors.push("password must be 8-12 character");
+           if (!/[A-Z]/.test(password)) errors.push("password must have at least uppercase letter");
+           if (!/[a-z]/.test(password)) errors.push("password must have at least lowercase letter");
+           if (!/[0-9]/.test(password)) errors.push("password must have numbers");
+
+           if (errors.length > 0) {
+            resultParagraph.textContent = errors[0];
+            resultParagraph.style.color = "red";
+           }else {
+            let strength = calculateStrength(password);
+            let strengthText = ["weak password", "medium password","strong password"];
+            let strengthColor = ["red","orange" ,"green"];
+            resultParagraph.textContent = strengthText[Math.min(strength -1,2)];
+            resultParagraph.style.color = strengthColor[Math.min(strength -1,2)];
+           }
+           
+        });
+
+        function calculateStrength(password) {
+            let strength = 0;
+            if (password.length >=8) strength++;
+            if (password.length >=12) strength++;
+           if (/[A-Z]/.test(password)) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+           return strength;
+        }
+                               
+        
+        
+</script>
+    
+</body>
+</html>
+        
+    

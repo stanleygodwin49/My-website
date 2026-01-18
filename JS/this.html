@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    "this" is more like an in-builts variable of an objects helps to define the particular context of the object
+    <form action="booking_form">
+        <input type="text" name="" id="text" placeholder="enter ur name">
+        <input type="password" id="password" placeholder="insert ur password">
+        <button type="submit">book now</button>
+        
+    </form>
+
+    <script>
+        const mySmartPhone={
+            //properties
+            brand:"apple",
+            model:"iphone 17",
+            color:"black",
+            batteryLevel:85,
+
+            checkBattery (){
+                console.log(`current battery: ${this.batteryLevel}%`);
+                
+            }
+            
+        }
+        
+        
+       document.getElementById('booking_form').addEventListener('submit',function(){
+        let inputs=this.querySelectorAll('input');
+        let valid=true;
+        let message=[];
+
+        inputs.forEach(inputs =>{
+            if(input.value === ''){
+                valid=false
+                message.push('please fill in ${input.placeholder} field');
+            }
+        });
+        if (!valid) {
+            alert(message.join('/n'));
+        }else{
+            alert('booking successful')
+        }
+       });
+    
+       
+    </script>
+</body>
+</html>

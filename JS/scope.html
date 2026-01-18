@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    globaal scope & local scopes
+    variable defined within a function can only be access to another function(local scope)
+    <p>varaible declared outside of the function and they accessed everywhere both outside and within that function(global scope)</p>
+    <script>
+       // let globalScope="i'm a global boy";//this is global scope
+        //arrow function
+        const showScope=()=>{
+            let localScope="i'm local";//if you remove the console.log(localScope) you will see its wont work cuz it is ment to
+            //be placed within the function not globally outside the function.
+            console.log(localScope);
+            console.log(globalScope);
+            
+            
+        }
+        showScope()
+    </script>
+    <p>A global scope can be accessed everywhere within application</p>
+    <p>A local scope can only be accessed within a function</p>
+</body>
+</html>

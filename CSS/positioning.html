@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+</head>
+<body>
+    <h2>positioning example</h2>
+
+    <div class="container">
+        <div class="box static">static</div>
+        <div class="box relative">relative</div>
+        <div class="box absolute">absolute</div>
+    </div>
+
+    <div class="sticky">sticky</div>
+    <p style="height: 1000px;">
+        scroll to fixed box stays at the connect
+
+    </p>
+
+    <div class="box fixed">fixed</div>
+
+    <style>
+        .container{
+            position: relative;
+            height: 300px;
+            background: #eee;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            color: white;
+            padding: 10px;
+            
+
+        }
+    </style>
+
+    <style>
+        .static{
+            background: #9c27b0;
+            position: static;
+
+        }
+    </style>
+
+    <style>
+        .relative{
+            background:#3f51b5;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        
+            
+            
+            
+        }
+    </style>
+
+    <style>
+        .absolute{
+            background: red;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+    <style>
+        .fixed{
+            background: #4caf50;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+
+        }
+    </style>
+    
+    <style>
+        .sticky{
+            background: #ffff00;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+
+
+
+
+    
+    
+        
+
+
+        
+    
+       
+    
+</body>
+</html>

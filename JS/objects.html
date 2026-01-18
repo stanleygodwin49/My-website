@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    what are object:object is a data type  that helps us to store related information to get
+    <ol>
+        <div>characteristics of object</div>
+        <li>collection of key-value pairs</li>
+        <li>objects have properties[information or attributes]</li>
+        <li>unordered:not indexed</li>
+        <li>dynamic[mutual]</li>
+        <li>have method[function]or behaviour</li>
+    </ol>
+   objects creation,accessing and modifying disturb
+   <script>
+    //creating an object
+    let person={
+        name:"stanley",
+        age:35,
+        isStudent:false
+        
+    };
+    console.log(person);
+    
+    //accessing properties of an objects
+    const myNAME=person.name;
+    console.log(myNAME);
+    //iterates over the objects
+    for(let key in person){
+        console.log(key);
+        
+    }
+    //we can use the objects to do it
+    let personKeys=Object.keys(person);
+    console.log(personKeys);
+    let personValue=Object.values(person);
+    console.log(personValue);
+    
+    let personKeyValue=Object.entries(person);
+    console.log(personKeyValue);
+
+    //add a new property
+    person.job="developer";
+    console.log(Object.entries(person));
+    //modify existing
+    person.age=38;
+    console.log(person);
+    //to remove/delete a property
+    delete person.isStudent;
+    
+    
+    
+    
+    
+    
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY METHOD</title>
+</head>
+<body>
+    (push,pop,shift,slice)
+    <script>
+        let colors=["red","green","blue"];
+        console.log("original colors:", colors);
+
+        colors.push("orange","ash");//is going to add at the end of the array.
+        console.log("after push('orange'):",colors);
+        //to remove item
+        colors.pop();
+        console.log("after pop():", colors);
+        //add to start
+        colors.unshift('purple');
+        console.log("after unshift ('purple'):",colors);
+        //remove  from start
+        colors.shift();
+        console.log("after shift():",colors);
+        //combines arrays
+        //these combines arrays together the old array above and these recent one
+        let moveColors=["yellow","cyan"];
+        let allColors=colors.concat(moveColors)
+        console.log('combined colors(all colors):',allColors);
+        //slice
+        //the slice method picks
+        let someColors=allColors.slice(1,4);
+        console.log("sliced colors(someColors):",someColors);
+        //find index
+        let blueIndex=allColors.indexOf('blue');
+        console.log('Indexof "blue" in allColors:',blueIndex);
+
+        let notFoundIndex=allColors.indexOf("yttyutyyyy");
+        console.log("Indexof yttyutyyyy:", notFoundIndex);
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

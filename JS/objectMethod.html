@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    action or behaviours of objects
+    what is it a method? method is a function within an objects
+    i.e a method is a function that is stored as a properly of an objects
+
+    a function is a function that is outside an objects
+    <script>
+        const mySmartPhone={
+            //properties
+            brand:"apple",
+            model:"iphone 17",
+            color:"black",
+            batteryLevel:"85",
+                 //method
+            makeCalls:function(numbers){
+                console.log('calling $ {numbers}');
+                
+            },
+            takePhoto (){
+                console.log("click!! click!! photo captured");
+                
+            }
+
+
+            
+            
+           
+        }
+        mySmartPhone.makeCalls("123-456-789");
+        mySmartPhone.takePhoto()
+        console.log(mySmartPhone);
+        
+    </script>
+    
+</body>
+</html>

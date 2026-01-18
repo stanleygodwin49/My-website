@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>inheritance allows a class to inherit properties/method from another class</h5>
+    <script>
+        //inheritance example
+        class Ebook extends Book{//Ebook is the child class while book is the parent class
+            constructor(title,author,filesize){
+                super(title,author)//this calls the constructor of the parents
+                this.filesize=filesize + "MB";
+            }
+            borrow(){
+                return `can you borrow me ${this.title}`;
+            }
+            download(){
+                return `downloading ${this.title}  (${this.filesize})...`;
+            }
+            returnBook(){
+                return `i want to return ${thi.title}`;
+            }
+        }
+        const ebook=new Ebook("javascript guide","MDN",15);
+        console.log(ebook.borrow());
+        console.log(ebook.download());
+        console.log(ebook.returnBook());
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+.booking-form input{
+    padding: 10px;
+    display: block;
+    margin-bottom: 20px;
+
+}
+.booking-form a{
+    margin: 10px;
+    text-decoration: none;
+    background: whitesmoke;
+    border-radius: 8px;
+    display: inline-block;
+    color:black;
+    padding: 15px;
+    box-shadow:rgba(0,0,0,0);
+    
+}
+.booking-form a:hover{
+    background: cadetblue;
+}
+section{
+    background: whitesmoke;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+
+}
+section a{
+    background: black;
+    margin: 3px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    
+    
+}
+section a:hover{
+    background: blue;
+}
+main{
+    background:gold;
+    padding: 50px;
+    padding-top: 5px;
+    margin-top: 30px;
+    
+}
+main a{
+    background: #000000;
+    padding: 10px;
+    color: gold;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 3px;
+}
+main a:hover{
+    background:grey;
+}
+.container{
+    background: gold;
+    padding: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+} 
+.flex-container{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.flex-container a{
+    background: whitesmoke;
+    text-decoration: none;
+    margin: 3px;
+    border-radius: 20px;
+    padding: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: end;
+    
+}
+@media (max-width:700px) {
+    .flex-container a{
+        flex: row;
+    }
+}
+
+    
+
+    
+
+
+    
+
+
+

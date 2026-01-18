@@ -1,0 +1,29 @@
+header{
+    background: blue;
+    color: white;
+    font-size: small;
+    padding: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.bond{
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+nav{
+    margin-top:0.5rem ;
+}
+nav a{
+    text-decoration: none;
+    margin:10px 10px;
+    color: white;
+    font-size: large;
+    
+}
+nav a:hover{
+    color:gold;
+    transition: 0.2s ease-in;
+}

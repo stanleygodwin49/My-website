@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+</head>
+<body>
+    it si an understanding of how the html works
+    <h1 id="main_heading">original heading</h1>
+    <p class="text_paragraph">first paragraph</p>
+    <p class="text_paragraph">second paragraph</p>
+    <p>first paragraph</p>
+    <script>
+        //change heading text (document is an object)
+       document.getElementById("main_heading").textContent="modified heading with getElementbyid!"//the (document)captures all the document in your html
+       const firstParagraph =document.querySelector(".text-paragraph");//for a particular element(p)
+       
+
+       firstParagraph.textContent +="(modified by javascript)"
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    a constructor is a tool within a class that is used to build an object from that class or a special method
+    that runs automatically on an objects
+    whether u add constructor to your class by defaults it there
+
+    <ul>
+        <li>benefits</li>
+        <ol>
+            <li>initialize object properties</li>
+            <li>use when creating objects with specific setup</li>
+            <li>it's a feature</li>
+        </ol>
+    </ul>
+
+
+    <script>
+        class Book{
+            constructor(title,author){
+                this.title=title;
+                this.author=author;
+                this.available=true;
+            }
+            borrow(){
+                if(this.available){
+                    this.available=false;
+                    return `you have borrowed a book of title:${this.title}`
+                }
+            }
+            returnBook (){
+                this.available=true;
+                return `thanks for returning "${this.title}"`
+            }
+        }
+        const book1=new Book("the great controversy", "ellena white");
+        console.log(book1.borrow());
+        console.log(book1.returnBook());
+        
+        
+    </script>
+</body>
+</html>

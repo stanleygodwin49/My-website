@@ -1,0 +1,43 @@
+ .password-form input{
+    width: 90%;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+.password-form{
+    width: 50%;
+    background:whitesmoke;
+    border-radius: 0 4px 10px rgba(16,46,157,0.1) ;
+    padding: 25px;
+    margin:0 auto;
+}
+.password-form label{
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+button{
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    transition:  background-color 0.3s ease-in-out;
+    border-radius: 4px;
+    text-align: center;
+    width: auto;
+    margin:20px auto;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.box{
+    text-align: center;
+}
+button:hover{
+    background: red;
+    transition: 0.3s ease-in;
+}

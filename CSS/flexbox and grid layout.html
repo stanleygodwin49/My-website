@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox and grid</title>
+</head>
+<body>
+    <h1 id="title">flexbox vs grid</h1>
+    <h2>flex[one dimensional]</h2>
+    <div class="container flex-container">
+        <div class="item">javascript</div>
+        <div class="item">css</div>
+        <div class="item">html</div>
+        <div class="item">react</div>
+        <div class="item">nodejs</div>
+        <div class="item">mySQL</div>
+
+
+
+
+        <style>
+            .container{
+                margin-bottom: 20px;
+                padding: 10px;
+                background:#fafafa;
+            
+                
+            }
+        </style>
+
+        <style>
+            .flex-container{
+                display: flex;
+                gap: 10px;
+            }
+        </style>
+
+        <style>
+            .item{
+                background: #4caf50;
+                color: white;
+                padding: 20px;
+                justify-content: center;
+                flex: 1;
+                
+            }
+        </style>
+    
+</body>
+</html>
+
+        <style>
+            .grid-container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+            }
+        </style>
+
+<h3>grid[two dimensional]</h3>
+    <div class="container grid-container">
+        <div class="item">javascript</div>
+        <div class="item">css</div>
+        <div class="item">html</div>
+        <div class="item">react</div>
+        <div class="item">nodejs</div>
+        <div class="item">mySQL</div>

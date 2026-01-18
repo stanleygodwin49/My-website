@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+
+    <h3>a switch statement is a type of control structure in programming that allows you to execute different blocks of codes
+        based on the value of a variable or expression.
+    </h3>
+    <p>switch[day]:this is where you put the value you want to check.it can be in variable,a function call,
+        or any other expression that evaluate to a value
+    </p>
+    <p>
+        case:this is where you specify a value to match against the [day]if the day matches this value,the code inside the block
+        will be executed.
+    </p>
+    <p>
+        break:this is used to exit the switch statement.if you dont use break, the code will"fall through"
+        to the next case and executethat code too.
+    </p>
+    <p>
+        defaults:this is an optional block that will be executed if the[day]doesnt match any of the value above
+    </p>
+    <script>
+        //switch//
+        let day="wednesday"
+        switch (day) {
+            case "monday":
+                console.log('today is monday');
+                
+                break;//terminate the program
+                case"tuesday":
+                   console.log("today is tuesday");
+                  break
+                  default:
+                      console.log("i dont know what today is!");
+                      break;
+                      
+                   
+        
+            
+                
+        }
+    </script>
+    
+</body>
+</html>

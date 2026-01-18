@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programming</title>
+</head>
+<body>
+    <h1>products</h1>
+    <div id="product"></div>
+    <h1>users</h1>
+    <div id="user"></div>
+    <h1>settings</h1>
+    <div id="setting"></div>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        #products, #users, #settings{
+             margin-bottom: 20px;
+        }
+        .product .user .setting{
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+
+
+    <script>
+        let product=[
+            {id:1, name:"laptop", price:"50000", stock:"10"},
+            {id:2, name:"phone", price:"20000", stock:"5"},
+            {id:3, name:"tablet", price:"30000", stock:"8"},
+        ]
+        let productsDiv=document.getElementById("product");
+        product.forEach(product =>{
+            productsDiv.innerHTML +=`<div class="product">${product.name} - ${product.price} -${product.stock}</div>`;
+        })
+    </script>
+
+
+    
+    
+</body>
+</html>
