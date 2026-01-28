@@ -1,118 +1,46 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>hello</title>
-    
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Home</title>
+    <link rel="stylesheet" href="book now.html">
 </head>
 <body>
     <header>
-        <div style="text-align: center; padding: 20px;">
-            <div style="display: inline-flex; align-items: center;gap: 15px;">
-                <img src="sticker.jpg" style="width: 80px; border-radius: 10px;">
-        <h3>Sticker House 
-            Registered</h3>
-        </div>
-        </div>
-    <label>
-        <input type="checkbox">
-        <div class="toggle">
-            <span class="Top_line common"></span>
-            <span class="Middle_line common"></span>
-            <span class="Bottom_line common"></span>
-        </div>
-        <div class="slide">
-            <h1>Menu</h1>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>   
-            <li><a href="About us.html">About us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-            </ul>
+        <div class="brand">
+            Grand palace hotel
 
-                
-        
         </div>
-    </label>
-    <ul class="nums">
-      <span>08033354469</span>
-      <span>09082440055</span>
-    </ul>
-     <p>contact us for special orders,odd sizes,odd thickness of acrylic sheets,foamboard and stickers:09082440055</p>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="booking.html">booking</a>
+            <a href="rooms.html">rooms</a>
+        </nav>
     </header>
-    <section>
-        <div class="hero_image">
-            <h2>WELCOME TO STICKER HOUSE REGISTERED</h2>
-            <P>the undisputed leaders and marketplace for screen printers,sign makers And the Digital/wide format consumable dealers</P>
-            <a href="products.html">check our products ^</a>
+
+    <div class="hero-image">
+        <div class="hero-content">
+        <h2>Welcome to luxury</h2>
+        <p>Experience comfort and elegance at the heart of the city</p>
         </div>
-    </section>
-
-    <main>
-        <div id="slide" style="opacity: 0;transform: translateX(-100%);transition: all 2s ease;">
-        <h4>The marketplace for graphics,Screen and large format printing materials</h4>
-
-        <div>Sticker House Register since 1984, has been the undisputed leader and marketplace for the sign makers,
-            the Digital and Wide Format consumable dealers,the resellers and printers.
-        </div>
-
-        <a href="About us.html">LEARN MORE</a>
-
-        <h3>WIDE FORMAT DIGITAL PRINTING MATERIALS</h3>
-        <h6>S-JECT AMERICAN FACTORY SAV [FULL 140 AND 120 GRAMS,HIGH STRENGTH GLUE,HIGH INK ADHESION</h6>
-        <img src="Wide-format-sav (3).webp" class="myImg" alt="an image">
-
-        <h5>TMP/HOLOGRAMS ROLLS</h5>
-        <img src="TMP-Hologram-Rolls-min (1).webp" class="myImg" alt="an image">
-        <p>WE FOLLOW AMERICAN FACTORIES TO ASIA TO GET YOU THE QUALITY AND THE VARIETY OF COLORS YOU DESERVE</p>
-        <a href="products.html">explore all our products</a>
-        </div>
-
- 
-        
-        
-
-    </main>
-    <main class="backGround">
-        <h6>OUALITY PRINTING MATERIALS</h6>
-        <h4>We have the widest variation of stickers and sav</h4>
-
-
-
-        <p>At Sticker House, we have the largest marketplace for graphics,screens and large format printing materials</p>
-
-
-        <a class="chat" href="CHAT US UP RIGHT NOW">CHAT US UP RIGHT NOW</a>
-
-        <a class="explore" href="products.html">EXPLORE OUR PRODUCTS</a></div>
-    </main>
-
-    <h4>About US</h4>
-    <div>Sticker House Register since 1984, has been the undisputed leader and marketplace for the-sign makers, the Digital and the
-        Wide format consumable dealers, the resellers and printers
     </div>
-
-    <h5>MENU</h5>
-    <div><a class="navs" href="index.html">Home</a></div>
-    <div><a class="navs" href="products.html">products</a></div>
-    <div><a class="navs" href="About us.html">About Us</a></div>
-    <div><a class="navs" href="blog.html">Blog</a></div>
-    <div><a class="navs" href="contact us.html">Contact Us</a></div>
+    
+        
+        
     
 
-    <footer>&copy;2026 Sticker-House Nigeria.All Right Reserved</footer>
+    <div class="container">
+        <h3>About Us</h3>
+        <p>grand palace hotel offers the finnest rooms,excellent services,and unforgetable stay</p>
+    </div>
+    <footer>
+        &copy;2026 Grand palace hotel
+    </footer>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            const slideMove=document.getElementById('slide');
-            if(slideMove.getBoundingClientRect().top<window.innerHeight){
-                slideMove.style.opacity=1;slideMove.style.transform='translateX(0)';
-                window.removeEventListener('scroll', arguments.callee);
-            }
-        })
-    </script>
-            
+    <link rel="stylesheet" href="style.css">
+
+
     
 </body>
 </html>

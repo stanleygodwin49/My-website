@@ -1,305 +1,153 @@
-.body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 header{
-    background: whitesmoke;
+    background-color: #003366;
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
     justify-content: space-around;
-    padding: 5px;
+    flex-wrap: wrap;
+    position: sticky;
 }
-header h3{
-    text-align: center;
+    
+    body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #fefefe;
+    color: #333;
+    display:flex ;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+.brand{
+    font-size: large;
     font-weight: bold;
-    padding: 40px;
 }
-header .nums{
-    text-align: right;
-    justify-content: right;
+
+nav{
+    margin-top: 0.5rem;
 }
-header p{
-    background: #8000ff;
+nav a{
     color: #fff;
-    padding: 25px;
-    margin-left: 70px;
-    margin-right: 70px;
-    text-align: center;
-}
- h2,p{
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-    padding: 30px;
-}
-section{
-    text-align: center;
-    justify-content: center;
-}
-section a{
-    background: #8000ff;
-    border-radius: 20px;
-    color: #fff;
-    padding: 20px;
     text-decoration: none;
-    gap: 50px;
+    margin:10px 10px ;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    
+    
+
 }
-section a:hover{
-    background-color:whitesmoke;
-    transition: 0.1s ease-in;
+nav a:hover{
+    color: #ffcc00;
 }
-section .hero_image{
-    background-image: url(stony.webp);
+.hero-image{
+    background-image: url(fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 100%;
+    height: 400px;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: center;
-}
-main{
-    text-align: center;
-    margin-top: 35px;
-}
-main a{
-    background: #8000ff;
     color: #fff;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 15px;
-    margin-top:70px;
+    
 }
-main a:hover{
-    background-color:whitesmoke;
-    transition: 0.1s ease-in;
+.hero-content{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
 }
-main div{
-    margin-bottom: 15px;
-}
-main h3{
-    color: #8000ff;
-    margin-top: 18px;
-}
-main h6{
-    color: black;
-    margin-top: 10px;
-}
-.myImg{
-    width: 80%;
-    max-width: 800px;
-    height: auto;
-}
-.backGround{
-    background-color: #8000ff;
+.container{
     text-align: center;
-    justify-content: center;
-    margin-top: 25px;
-    padding: 200px;
-}
-.backGround .chat:hover{
-    background-color:whitesmoke;
-    transition: 0.1s ease-in;
-}
-.backGround .explore:hover{
-    background-color: #8000ff;
-    transition: 0.1s ease-in;
-}
- .chat{
-    background: black;
-    color: #fff;
-    padding: 12px;
-    margin: 0 auto 5px auto;
-    text-decoration: none;
-    display: block;
-    width: fit-content;
-    text-align: center;
-    justify-content: center;
-}
- .explore{
-    background: #fff;
-    color: black;
-    padding: 12px;
-    text-decoration: none;
-    margin: 0 auto;
-    display: block;
-    width: fit-content;
-    text-align: center;
-    justify-content: center;
-}
-h4{
-    margin-bottom: 15px;
-}
-div{
-    margin-top: 15px;
-}
-h5{
-    color: black;
-    font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-div .navs{
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-    width: fit-content;
-    cursor: pointer;
-}
-div .navs:hover{
-    background: gray;
-    padding: 4px;
-    transition: 0.2s ease-in;
 }
 footer{
+    background-color: #003366;
     text-align: center;
-    color: black;
+    padding: 20px;
+    font-size: medium;
+    color: #fff;
 }
-/*products styling*/
-.larger_images{
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap: 10px;
+
+/*room page style*/
+.box{
+    text-align: center;
+    padding: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
-.larger_images img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+.container{
     background: whitesmoke;
-    padding: 5px;
-    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+    
+    
 }
-article{
-    text-align: center;
-    font-weight: 800;
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
 }
-@media(max-width:200%){
-    img{
-        border-radius: 6px;
-    }
+.room{
+    justify-content: center;
+    padding: 30px;
+    color: black;
+    background: white;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: #000;
 }
-/*about page styling*/
-.about{
-    text-align: center;
-    text-decoration: dashed;
+.room h2{
+    color: #ffcc00;
 }
-.welly{
-    text-align: center;
-    margin-bottom: 15px;
-}
-.content{
-    text-align: left;
-}
-@media(max-width:500%){
-    img,.about,.welly{
-        text-align: center;
-    }
-}
-
-/*blog page styling*/
-.blog{
-    margin-left: 5px;
-    font-weight: bolder;
-}
-.dev{
-    margin-left: 5px;
-    margin-top: 40px;
+.room:hover{
+    transform: translateY(-5px);
 }
 
 
-.slide{
-    height: 100vh;
-    width: 180px;
+
+.booking-form{
+    width: 50%;
+    margin: 0 auto;
     background: #fff;
-    position: absolute;
-    transition: 0.5s;
-    transform: translateX(-180px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(16,46,157,0.1);
 }
-h1{
-    color: #8000ff;
-    font-weight: 800;
-    text-align: right;
-    padding: 10px 0;
-    padding-right: 30px;
-    pointer-events: none;
-
+.booking-form label{
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin: 10px 0px 5
 }
-ul li a{
-    color: #011941;
-    font-weight: 500;
-    padding: 5px 0;
-    display:block;
-    text-transform: capitalize;
+.booking-form input,select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    background: #003060;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: medium;
+    border-radius: 4px;
+    transition:  background-color 0.3s ease-in-out;
     text-decoration: none;
-    transition: 0.2s ease-out;
+    text-align: center;
+    
+}
+button:hover{
+    background: #1073d7;
+}
 
-}
-input{
-    display: none;
-    visibility: hidden;
-}
-.toggle{
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    top: 20px;
-    left: 15px;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 2px;
-    background:whitesmoke;
-    box-shadow: 0 0 10px rgba(0 ,0, 0 ,0.3);
-}
-.toggle .common{
-    position: absolute;
-    height: 2px;
-    width: 20px;
-    background-color: #8000ff;
-    border-radius: 50px;
-    transition: 0.3s ease;
 
-}
-.toggle .Top_line{
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.toggle .Middle_line{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.toggle .Bottom_line{
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-input:checked ~ .toggle.Top_line{
-    left: 2px;
-    top: 14px;
-    width: 25px;
-    transform: rotate(45deg);
-}
-input:checked ~ .toggle.Bottom_line{
-    left: 2px;
-    top: 14px;
-    width: 25px;
-    transform: rotate(-45deg);
-}
-input:checked ~ .toggle.Middle_line{
-    opacity: 0;
-    transform: translateX(20px);
-}
-input:checked ~ .slide{
-    transform: translateX(0);
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-ul li a:hover{
-    background:gray;
-}
-@media(max-height:2500px ) and (max-width:400%){
-    .hero_image{
-        font-weight: 800;
-    }
-}
+
+
+
+
+
+
+
+
+
