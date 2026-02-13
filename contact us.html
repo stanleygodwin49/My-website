@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div style="text-align: center; padding: 20px;">
+            <div style="display: inline-flex; align-items: center;gap: 15px;">
+                <img src="sticker.jpg" style="width: 80px; border-radius: 10px;">
+        <h3>Sticker House 
+            Registered</h3>
+        </div>
+        </div>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="Top_line common"></span>
+            <span class="Middle_line common"></span>
+            <span class="Bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>   
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+
+                
+        
+        </div>
+    </label>
+    <ul class="nums">
+      <span>08033354469</span>
+      <span>09082440055</span>
+    </ul>
+     <p>contact us for special orders,odd sizes,odd thickness of acrylic sheets,foamboard and stickers:09082440055</p>
+    </header>
+     
+    <h4 class="L">CONTACT US</h4>
+    <span class="let">LET'S GET IN TOUCH</span>
+
+    
+        <div class="message">MESSAGE</div>
+
+        
+        <form action="" id="form">
+            <label for="name">Name</label>
+            <input class="search-input"   type="text" id="name" placeholder="your name">
+
+            <label for="email">Email</label>
+            <input class="search-input" type="email" id="email" placeholder="email">
+
+            <label for="message">Message</label>
+            <textarea class="search-input" name="message" id="message"></textarea>
+
+            <button type="submit">CONTACT</button>
+          
+            
+        </form>
+
+
+        <script>
+            window.addEventListener('load', () => {
+        document.querySelector(".message").classList.add('show');
+    });
+    
+     const form=document.getElementById('form');
+     form.addEventListener('submit', (e)=>{
+        const name=document.getElementById('name');
+        const email=document.getElementById('email');
+        let error=[]
+
+        if(!name.value.trim()) {
+            error.push('name is required');
+        }
+        if (!email.value.includes('@') || !email.value.includes('.')){
+            error.push('invalid email');
+        }
+        
+        if (error.length > 0){
+            e.preventDefault();
+            alert(error.join('\n'));
+        }
+     })
+        </script>
+    
+    
+</body>
+</html>
